@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CrossPlatformSuite" parallel="tests">
+<test name="RealDevice Test">
+    <parameter name="device" value="dca52218"/> 	
+  	<parameter name="version" value="5.1.1"></parameter>	
+  	<parameter name="appiumServer" value="http://127.0.0.1:4723/wd/hub"></parameter>
+    <classes>
+     	<class name="com.weeschool.Users.WeeTunesAlbumTC_01">
+      		<methods>
+      		    <exclude name="playAllSongsOfPlayFullBath"/>
+      		    <include name="Activities"/>
+      		</methods>
+      	</class>
+    </classes>
+</test>
+<test name="Emulator Test">
+    <parameter name="device" value="4d00c2664d6851e9"></parameter>	 
+  	<parameter name="version" value="6.0.1"></parameter>	
+  	<parameter name="appiumServer" value="http://127.0.0.1:4733/wd/hub"></parameter>
+    <classes>
+     	<class name="com.weeschool.Users.WeeTunesAlbumTC_01">
+      		<methods>
+      		    <exclude name="playAllSongsOfPlayFullBath"/>
+      		    <include name="Activities"/>
+      		</methods>
+      	</class>
+    </classes>
+</test>
+</suite><!--  -->
+
+
+
+

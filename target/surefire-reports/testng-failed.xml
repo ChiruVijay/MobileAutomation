@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [CrossPlatformSuite]" parallel="tests">
+  <test thread-count="5" verbose="0" name="Emulator Test(failed)" parallel="tests">
+    <parameter name="appiumServer" value="http://127.0.0.1:4733/wd/hub"/>
+    <parameter name="device" value="4d00c2664d6851e9"/>
+    <parameter name="version" value="6.0.1"/>
+    <classes>
+      <class name="com.weeschool.Users.WeeTunesAlbumTC_01">
+        <methods>
+          <include name="Activities"/>
+          <include name="postSteps"/>
+          <include name="preSteps"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuit"/>
+        </methods>
+      </class> <!-- com.weeschool.Users.WeeTunesAlbumTC_01 -->
+    </classes>
+  </test> <!-- Emulator Test(failed) -->
+</suite> <!-- Failed suite [CrossPlatformSuite] -->

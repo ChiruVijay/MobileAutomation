@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 475.786 s <<< FAILURE! - in TestSuite
+preSteps(com.weeschool.Users.WeeTunesAlbumTC_01)  Time elapsed: 455.934 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: Error occured while starting App. Original error: Error executing adbExec. Original error: 'Command 'C\:\\Users\\Qwinix\\android-sdks\\platform-tools\\adb.exe -P 5037 -s 4d00c2664d6851e9 shell am start -W -n io.appium.unlock/.Unlock -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' timed out after 20000ms'; Stderr: ''; Code: 'null' (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 473.30 seconds
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-RJJ4QCA', ip: '192.168.146.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: driver.version: AndroidDriver
+
